@@ -99,3 +99,28 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+# Applications
+alias preview='open -a Preview'
+alias finder='open -a Finder'
+alias s='open -a Sublime\ Text'
+
+# alias sort=gsort
+alias traintimes='open -a Firefox http://ojp.nationalrail.co.uk/service/timesandfares/SFD/DWN/today/1615/dep'
+alias cdoc='cd /Users/marjac01/OneDrive\ -\ Arm/Documents'
+alias cdev='cd /Users/marjac01/Development'
+alias notes='open -a MedleyText'
+alias pingarm='ping www.arm.com'
+alias armaddr='echo "Floor 7, 11 Portland St, Manchester, M1 3HU"'
+
+alias lslinks='ls -al | grep "\->"'
+alias ll='ls -lh'
+alias sl='ls'
+alias rm='rm -i'
+
+# Make grep more user friendly by highlighting matches
+alias grep='grep --color=auto'
+
+alias sleep='pmset displaysleepnow'
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload='eval $SHELL -l'
