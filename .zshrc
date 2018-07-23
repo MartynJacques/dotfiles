@@ -127,3 +127,5 @@ alias sleep='pmset displaysleepnow'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload='eval $SHELL -l'
+
+alias v='vim -U NONE -u ~/.vimrc'
