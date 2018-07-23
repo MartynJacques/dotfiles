@@ -25,6 +25,7 @@ set modelines=0
 
 " Colour scheme
 colorscheme solarized
+set background=dark
 
 " Remove trailing whitespace 
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
