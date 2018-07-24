@@ -32,6 +32,7 @@ set background=dark
 autocmd FileType c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Line length
-set colorcolumn=80
-
+if v:version > 703
+    set colorcolumn=80
+endif
 
