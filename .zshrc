@@ -69,11 +69,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# Show auto suggestion in grey
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=239'
+# Support full colors
 export TERM=xterm-256color
-# User configuration
 
+# User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
