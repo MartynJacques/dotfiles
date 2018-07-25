@@ -71,7 +71,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Show auto suggestion in grey
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=239'
-
+export TERM=xterm-256color
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
