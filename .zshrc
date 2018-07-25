@@ -70,7 +70,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Show auto suggestion in grey
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
+
 
 # User configuration
 
