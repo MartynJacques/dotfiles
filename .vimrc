@@ -9,13 +9,22 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'micha/vim-colors-solarized'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'yggdroot/indentline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Status bar theme
+let g:airline_solarized_bg='dark'
+
 " Enable line numbers
 set number
+set relativenumber
 
 " Enable syntax highlighting
 syntax on
@@ -27,21 +36,19 @@ set modelines=0
 colorscheme solarized
 set background=dark
 
-" Remove trailing whitespace 
+" Remove trailing whitespace
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
-autocmd FileType c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType * autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Line length ruler
 if v:version > 703
     set colorcolumn=80
 endif
 
-" Trim blanks line from bottom of file
-" https://stackoverflow.com/questions/7495932/how-can-i-trim-blank-lines-at-the-end-of-file-in-vim/7496112
-function TrimEndLines()
-    let save_cursor = getpos(".")
-    :silent! %s#\($\n\s*\)\+\%$##
-    call setpos('.', save_cursor)
-endfunction
-
-au BufWritePre * call TrimEndLines()
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab

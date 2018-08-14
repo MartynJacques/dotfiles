@@ -106,7 +106,7 @@ alias preview='open -a Preview'
 alias finder='open -a Finder'
 
 # If we're on a server, open sublime via rmate
-if [ -f $HOME/rsub ] ; then 
+if [ -f $HOME/rsub ] ; then
   alias s='$HOME/rsub'
 else
   alias s='open -a Sublime\ Text'
@@ -134,3 +134,4 @@ alias sleep='pmset displaysleepnow'
 alias reload='eval $SHELL -l'
 
 alias v='vim -U NONE -u $HOME/.vimrc'
+
