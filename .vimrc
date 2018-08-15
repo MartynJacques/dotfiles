@@ -13,6 +13,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'auto-pairs-gentle'
 Plugin 'yggdroot/indentline'
 
 " All of your Plugins must be added before the following line
@@ -45,6 +46,11 @@ if v:version > 703
     set colorcolumn=80
 endif
 
+" key remappings
+inoremap jk <esc>
+inoremap <esc> <nop>
+
+" Tab spacing
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
