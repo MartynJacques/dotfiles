@@ -15,6 +15,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'auto-pairs-gentle'
 Plugin 'yggdroot/indentline'
+Plugin 'valloric/youcompleteme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,7 +49,6 @@ endif
 
 " key remappings
 inoremap jk <esc>
-inoremap <esc> <nop>
 
 " Tab spacing
 filetype plugin indent on
@@ -58,3 +58,6 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
