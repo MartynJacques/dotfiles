@@ -50,14 +50,16 @@ endif
 " key remappings
 inoremap jk <esc>
 
-" Tab spacing
+" fix backspace
+set backspace=indent,eol,start
+
+" Tab spacing https://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type
 filetype plugin indent on
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
+autocmd Filetype python setlocal ts=4 sw=4 sts=4 expandtab
 
-
+" Linting C code
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
