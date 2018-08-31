@@ -105,14 +105,6 @@ alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias preview='open -a Preview'
 alias finder='open -a Finder'
 
-# If we're on a server, open sublime via rmate
-if [ -f $HOME/rsub ] ; then
-  alias s='$HOME/rsub'
-else
-  alias s='open -a Sublime\ Text'
-fi
-
-# alias sort=gsort
 alias traintimes='open -a Firefox http://ojp.nationalrail.co.uk/service/timesandfares/SFD/DWN/today/1615/dep'
 alias cdoc='cd /Users/marjac01/OneDrive\ -\ Arm/Documents'
 alias cdev='cd /Users/marjac01/Development'
