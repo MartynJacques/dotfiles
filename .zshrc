@@ -127,3 +127,12 @@ alias reload='eval $SHELL -l'
 
 alias v='vim -U NONE -u $HOME/.vimrc'
 
+alias sublime='open -a Sublime\ Text'
+
+alias cdmeer='cd ~/Development/Meerkat/Meerkat-Reports'
+alias cdhive='cd ~/Development/Meerkat/hive-integration'
+
+alias streamline='~/streamline/launch &'
+
+export REPORT_DIR='/Users/marjac01/Applications/eclipse/java-2018-09/Eclipse.app/Contents/MacOS'
+

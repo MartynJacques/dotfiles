@@ -9,13 +9,18 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'micha/vim-colors-solarized'
-Plugin 'scrooloose/syntastic'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'w0rp/ale'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'auto-pairs-gentle'
 Plugin 'yggdroot/indentline'
-Plugin 'valloric/youcompleteme'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
+set timeoutlen=1000
+set ttimeoutlen=0
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,7 +45,7 @@ set background=dark
 
 " Remove trailing whitespace
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
-autocmd FileType * autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Line length ruler
 if v:version > 703
@@ -59,7 +64,13 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
-autocmd Filetype python setlocal ts=4 sw=4 sts=4 expandtab
+autocmd Filetype python,java setlocal ts=4 sw=4 sts=4 expandtab
+set autoindent
+set smartindent
 
-" Linting C code
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+" Auto-wrap text files to 80 chars long
+au BufRead,BufNewFile *.txt setlocal textwidth=79
+au BufRead,BufNewFile *.robot setlocal ts=4 sw=4 sts=4 expandtab syntax=robot
+
+" Jenkinsfile editing groovy
+au BufNewFile,BufRead Jenkinsfile* setf groovy
