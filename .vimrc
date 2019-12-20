@@ -18,6 +18,9 @@ Plugin 'auto-pairs-gentle'
 Plugin 'yggdroot/indentline'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+Plugin 'google/vim-glaive'
 
 set timeoutlen=1000
 set ttimeoutlen=0
@@ -74,3 +77,7 @@ au BufRead,BufNewFile *.robot setlocal ts=4 sw=4 sts=4 expandtab syntax=robot
 
 " Jenkinsfile editing groovy
 au BufNewFile,BufRead Jenkinsfile* setf groovy
+
+augroup autoformat_settings
+  autocmd FileType java AutoFormatBuffer google-java-format
+augroup END

@@ -104,6 +104,7 @@ alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 # Applications
 alias preview='open -a Preview'
 alias finder='open -a Finder'
+alias vs='open -a Visual\ Studio\ Code'
 
 alias traintimes='open -a Firefox http://ojp.nationalrail.co.uk/service/timesandfares/SFD/DWN/today/1615/dep'
 alias cdoc='cd /Users/marjac01/OneDrive\ -\ Arm/Documents'
