@@ -137,3 +137,7 @@ alias streamline='~/streamline/launch &'
 
 export REPORT_DIR='/Users/marjac01/Applications/eclipse/java-2018-09/Eclipse.app/Contents/MacOS'
 
+alias ruby="/usr/local/opt/ruby/bin/ruby"
+alias gem="/usr/local/opt/ruby/bin/gem"
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
