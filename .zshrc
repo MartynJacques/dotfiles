@@ -106,10 +106,8 @@ alias preview='open -a Preview'
 alias finder='open -a Finder'
 alias vs='open -a Visual\ Studio\ Code'
 
-alias traintimes='open -a Firefox http://ojp.nationalrail.co.uk/service/timesandfares/SFD/DWN/today/1615/dep'
 alias cdoc='cd /Users/marjac01/OneDrive\ -\ Arm/Documents'
 alias cdev='cd /Users/marjac01/Development'
-alias notes='open -a MedleyText'
 alias pingarm='ping www.arm.com'
 alias armaddr='echo "Floor 7, 11 Portland St, Manchester, M1 3HU"'
 
@@ -131,6 +129,7 @@ alias v='vim -U NONE -u $HOME/.vimrc'
 alias sublime='open -a Sublime\ Text'
 
 alias cdmeer='cd ~/Development/Meerkat/Meerkat-Reports'
+alias cdsl='cd ~/Development/Meerkat/streamline'
 alias cdhive='cd ~/Development/Meerkat/hive-integration'
 
 alias streamline='~/streamline/launch &'
